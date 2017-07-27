@@ -1,0 +1,76 @@
+{% extends "base.html" %}
+
+{% block content %}
+    <section id="page-breadcrumb">
+        <div class="vertical-center sun">
+            <div class="container">
+                <div class="row">
+                    <div class="action">
+                        <div class="col-sm-12">
+                            <h1 class="title">Покупка билетов</h1>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="container">
+        <div class="price-table">
+            <div class="row">
+                {% for product in products %}
+                    <form class="form-cart" action="{% url "cart:CartAdd" product.id %}" method="post">
+                        {% csrf_token %}
+                        <div class="col-sm-6 col-md-3">
+                            <div class="single-price price-{{ product.id }}">
+                                <div class="table-heading">
+                                    <p class="plan-name">{{ product.title }}</p>
+                                    <p class="plan-price"><span
+                                            class="price">{{ product.price }} руб.</span><span
+                                            class="month">/ 1 билет</span></p>
+                                </div>
+                                <ul>
+                                    <li class="quantity">
+                                        <div>
+                                            <span class="max"> + </span>
+                                            <input id="id_update" name="update" type="hidden" value="True">
+                                            <input name="quantity" id="id_quantity" value="0">
+                                            <span class="min"> - </span>
+                                        </div>
+                                    </li>
+                                    <li>Стоимость:
+                                        <div style="float: right;">
+                                            <span style="float: left; padding-right: 5px;" id="product_price-{{ product.id }}">0</span><span> руб.</span>
+                                        </div>
+                                    </li>
+                                </ul>
+                                <input type="submit" class="btn btn-buynow" value="Забронировать билет">
+                            </div>
+                        </div>
+                    </form>
+                {% endfor %}
+            </div>
+        </div><!--/#price-table-->
+    </section>
+    <section id="action" class="responsive">
+        <div class="vertical-center">
+             <div class="container">
+                <div class="row">
+                    <div class="action take-tour">
+                        <div class="col-sm-7 wow fadeInLeft animated" data-wow-duration="500ms" data-wow-delay="300ms" style="visibility: visible; animation-duration: 500ms; animation-delay: 300ms; animation-name: fadeInLeft;">
+                            <h1 class="title">Итого: <span class="total_price">{{ cart.get_total_price }}</span> руб.</h1>
+                        </div>
+                        <div class="col-sm-5 text-center wow fadeInRight animated" data-wow-duration="500ms" data-wow-delay="300ms" style="visibility: visible; animation-duration: 500ms; animation-delay: 300ms; animation-name: fadeInRight;">
+                            <div class="tour-button">
+                                <a href="{% url "orders:OrderCreateView" %}" class="btn btn-common">ЗАКАЗАТЬ</a>
+                             </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+{% endblock %}
+
+
+
+

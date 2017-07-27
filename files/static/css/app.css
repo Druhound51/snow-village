@@ -1,0 +1,36 @@
+body {/*
+    background: #fff;
+    font-family: 'Lato', sans-serif;
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 22px;
+    color: #686868;
+}*/
+}
+
+.navbar.navbar-inverse {
+    margin-top: 20px;
+    padding-left: 0px;
+    padding-right: 0px;
+}
+
+.max{
+    float: left !important;
+    font-size: 30px;
+    padding: 3px 0px 3px 0;
+}
+.min{
+    font-size: 30px;
+    padding: 3px 0 3px 5px;
+}
+#id_quantity{
+    width: 55px;
+    text-align: center;
+}
+.quantity{
+    text-align: center;
+    padding: 12px 80px !important;
+}
+.order {
+    padding: 10px 0
+}

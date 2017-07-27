@@ -1,0 +1,29 @@
+{% extends 'base.html' %}
+{% block content %}
+    <section id="page-breadcrumb">
+        <div class="vertical-center sun">
+            <div class="container">
+                <div class="row">
+                    <div class="action">
+                        <div class="col-sm-12">
+                            <h1 class="title">{{ page.title }}</h1>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="padding wow fadeIn animated" data-wow-duration="1000ms"
+             data-wow-delay="300ms"
+             style="visibility: visible; animation-duration: 1000ms; animation-delay: 300ms; animation-name: fadeIn;">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-12" data-wow-duration="500ms" data-wow-delay="300ms"
+                     style="visibility: visible; animation-duration: 500ms; animation-delay: 300ms; animation-name: fadeInLeft;">
+                    {{ page.text|safe }}
+                </div>
+            </div>
+        </div>
+    </section>
+
+{% endblock %}

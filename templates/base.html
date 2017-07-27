@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <title>Home | Triangle</title>
+    <link href="https://fonts.googleapis.com/css?family=PT+Serif:400i|Roboto:300,400,500,700" rel="stylesheet">
+    <link href="/static/css/bootstrap.min.css" rel="stylesheet">
+    <link href="/static/css/font-awesome.min.css" rel="stylesheet">
+    <link href="/static/css/animate.min.css" rel="stylesheet">
+    <link href="/static/css/lightbox.css" rel="stylesheet">
+    <link href="/static/css/main.css" rel="stylesheet">
+    <link href="/static/css/responsive.css" rel="stylesheet">
+    <link href="/static/css/app.css" rel="stylesheet">
+
+    <!--[if lt IE 9]>
+        <script src="/static/js/html5shiv.js"></script>
+        <script src="/static/js/respond.min.js"></script>
+    <![endif]-->
+    <link rel="shortcut icon" href="/static/images/ico/favicon.ico">
+    <link rel="apple-touch-icon-precomposed" sizes="144x144"
+          href="/static/images/ico/apple-touch-icon-144-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" sizes="114x114"
+          href="/static/images/ico/apple-touch-icon-114-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" sizes="72x72"
+          href="/static/images/ico/apple-touch-icon-72-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" href="/static/images/ico/apple-touch-icon-57-precomposed.png">
+</head><!--/head-->
+
+<body>
+<header id="header">      
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-12 overflow">
+                   <div class="social-icons pull-right">
+                        <ul class="nav nav-pills">
+                            <li><a href=""><i class="fa fa-facebook"></i></a></li>
+                            <li><a href=""><i class="fa fa-twitter"></i></a></li>
+                            <li><a href=""><i class="fa fa-google-plus"></i></a></li>
+                            <li><a href=""><i class="fa fa-dribbble"></i></a></li>
+                            <li><a href=""><i class="fa fa-linkedin"></i></a></li>
+                        </ul>
+                    </div> 
+                </div>
+             </div>
+        </div>
+        <div class="navbar navbar-inverse" role="banner">
+            <div class="container">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+
+                    <a class="navbar-brand" href="/">
+                        <h1><img src="http://via.placeholder.com/208x60" alt="logo"></h1>
+                    </a>
+                    
+                </div>
+                <div class="collapse navbar-collapse">
+                    <ul class="nav navbar-nav navbar-right">
+                        <!-- <li><a href="/">Главная</a> -->
+                        </li>
+                        <li><a href="/o-nas/ ">О нас</a></li>                   
+                        <li class="dropdown"><a href="/meropriyatiya/">Мероприятия<i class="fa fa-angle-down"></i></a>
+                            <ul role="menu" class="sub-menu">
+                                <li><a href="/meropriyatiya/snegoled-v-snezhnoj-derevne/">"Снеголед" в "Снежной Деревне"</a></li>
+                                <li><a href="/meropriyatiya/beshenaya-pila/">Бешеная пила</a></li>
+                            </ul>
+                        </li>
+                        <li class="dropdown"><a href="/uslugi/">Услуги <i class="fa fa-angle-down"></i></a>
+                            <ul role="menu" class="sub-menu">
+                                <li><a href="/uslugi/individualnye-poseshcheniya/">Индивидуальные посещения</a></li>
+                                <li><a href="/uslugi/gruppovye-ekskursii/">Групповые экскурсии</a></li>
+                                <li><a href="/uslugi/aktivnyj-otdykh/">Активный отдых</a></li>
+                            </ul>
+                        </li>                         
+                        <li><a href="/kontakty/">Контакты</a></li>                    
+                        <li><a href="/store/">Купить билет</a></li>
+                    </ul>
+                </div>
+                <div class="search">
+                    <form role="form" lpformnum="1">
+                        <i class="fa fa-search"></i>
+                        <div class="field-toggle">
+                            <input type="text" class="search-form" autocomplete="off" placeholder="Search">
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </header>
+<!--/#header-->
+
+{% block content %}
+<section id="home-slider">
+    <div class="container">
+        <div class="row">
+            <div class="main-slider">
+                <div class="slide-text">
+                    <h1>ДОБРО ПОАЛОВАТЬ<br/>
+                        В "СНЕЖНУЮ ДЕРЕВНЮ"</h1>
+                    <p>Welcome to snowderevnya</p>
+                    <a href="/store/" class="btn btn-common">ПРИСОЕДИНИТЬСЯ</a>
+                </div>
+                <img src="/static/images/home/slider/hill.png" class="slider-hill" alt="slider image">
+                <img src="/static/images/home/slider/house.png" class="slider-house" alt="slider image">
+                <img src="/static/images/home/slider/sun.png" class="slider-sun" alt="slider image">
+                <img src="/static/images/home/slider/birds1.png" class="slider-birds1" alt="slider image">
+                <img src="/static/images/home/slider/birds2.png" class="slider-birds2" alt="slider image">
+            </div>
+        </div>
+    </div>
+    <div class="preloader"><i class="fa fa-sun-o fa-spin"></i></div>
+</section>
+<!--/#home-slider-->
+
+<section id="services">
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-4 text-center padding wow fadeIn" data-wow-duration="1000ms" data-wow-delay="600ms">
+                <div class="single-service">
+                    <div class="wow scaleIn" data-wow-duration="500ms" data-wow-delay="600ms">
+                        <img src="/static/images/home/icon2.png" alt="">
+                    </div>
+                    <h2>ИНДИВИДУАЛЬНЫЕ ПОСЕЩЕНИЯ</h2>
+                    <p>В первую очередь, "Снежная Деревня" это место для семейного отдыха и веселых встреч с друзьями.</p>
+                </div>
+            </div>
+            <div class="col-sm-4 text-center padding wow fadeIn" data-wow-duration="1000ms" data-wow-delay="300ms">
+                <div class="single-service">
+                    <div class="wow scaleIn" data-wow-duration="500ms" data-wow-delay="300ms">
+                        <img src="/static/images/home/icon1.png" alt="">
+                    </div>
+                    <h2>ГРУППОВЫЕ ЭКСКУРСИИ</h2>
+                    <p>"Снежную Деревню" можно посещать организованными группами от 15 человек. Ежегодно мы проводим эксурсии для организаций, воспитанников детских садов и школ!</p>
+                </div>
+            </div>
+            <div class="col-sm-4 text-center padding wow fadeIn" data-wow-duration="1000ms" data-wow-delay="900ms">
+                <div class="single-service">
+                    <div class="wow scaleIn" data-wow-duration="500ms" data-wow-delay="900ms">
+                        <img src="/static/images/home/icon3.png" alt="">
+                    </div>
+                    <h2>АКТИВНЫЙ ОТДЫХ</h2>
+                    <p>Для тех, кто любит адреналин, мы предлагаем активные развлечения на свежем отдыхе.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!--/#services-->
+
+<section id="action" class="responsive">
+    <div class="vertical-center">
+        <div class="container">
+            <div class="row">
+                <div class="action take-tour">
+                    <div class="col-sm-7 wow fadeInLeft" data-wow-duration="500ms" data-wow-delay="300ms">
+                        <h1 class="title">Просмотрите фотографии центра</h1>
+                        <p>Великолепные виды и структуры ожидают вас</p>
+                    </div>
+                    <div class="col-sm-5 text-center wow fadeInRight" data-wow-duration="500ms" data-wow-delay="300ms">
+                        <div class="tour-button">
+                            <a href="#" class="btn btn-common">ТУР ПО ДЕРЕВНЕ</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!--/#action-->
+
+<section id="features">
+    <div class="container">
+        <div class="row">
+            <div class="single-features">
+                <div class="col-sm-5 wow fadeInLeft" data-wow-duration="500ms" data-wow-delay="300ms">
+                    <img src="/static/images/home/image1.png" class="img-responsive" alt="">
+                </div>
+                <div class="col-sm-6 wow fadeInRight" data-wow-duration="500ms" data-wow-delay="300ms">
+                    <h2>ПОСЕТИТЬ СНЕЖНЫЙ ЛАБИРИНТ</h2>
+                    <P>Центром всего экскурсионно-туристического центра является огромная постройка из снега общей площадью более 2000 кв.м. Каждый год тема оформления снежных залов разная!/P>
+                </div>
+            </div>
+            <div class="single-features">
+                <div class="col-sm-6 col-sm-offset-1 align-right wow fadeInLeft" data-wow-duration="500ms"
+                     data-wow-delay="300ms">
+                    <h2>ПОСЕТИТЬ ВИЗИТ-ЦЕНТР</h2>
+                    <P>Это очень просторное и уютное место. Из его окон открывается чудесный вид на Хибины. Здесь вы сможете легко перекусить вкусной выпечкой с чаем или сытно пообедать.</P>
+                </div>
+                <div class="col-sm-5 wow fadeInRight" data-wow-duration="500ms" data-wow-delay="300ms">
+                    <img src="/static/images/home/image2.png" class="img-responsive" alt="">
+                </div>
+            </div>
+            <div class="single-features">
+                <div class="col-sm-5 wow fadeInLeft" data-wow-duration="500ms" data-wow-delay="300ms">
+                    <img src="/static/images/home/image3.png" class="img-responsive" alt="">
+                </div>
+                <div class="col-sm-6 wow fadeInRight" data-wow-duration="500ms" data-wow-delay="300ms">
+                    <h2>ЗАГЛЯНУТЬ В СУВЕНИРНУЮ ЛАВКУ</h2>
+                    <P>Здесь вы найдете сувениры на любой вкус и кошелек: изделия из керамики, дерева, кости и рога оленя, стекла, а также сувенирные пряники и огромный выбор памятных магнитов.</P>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!--/#features-->
+
+<section id="clients">
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-12">
+                <div class="clients text-center wow fadeInUp" data-wow-duration="500ms" data-wow-delay="300ms">
+                    <p><img src="/static/images/home/clients.png" class="img-responsive" alt=""></p>
+                    <h2 class="title">ЕСТЬ ЧТО ПОСМОТРЕТЬ</h2>
+                    <p>Каждый год зимой у подножия Хибин появляется настоящий уголок сказки, где каждый найдет что-то для себя необычное и увлекательное!</p>
+                </div>
+                <div class="clients-logo wow fadeIn" data-wow-duration="1000ms" data-wow-delay="600ms">
+                    <div class="col-xs-3 col-sm-2">
+                        <a href="#"><img src="/static/images/home/client1.png" class="img-responsive" alt=""></a>
+                    </div>
+                    <div class="col-xs-3 col-sm-2">
+                        <a href="#"><img src="/static/images/home/client2.png" class="img-responsive" alt=""></a>
+                    </div>
+                    <div class="col-xs-3 col-sm-2">
+                        <a href="#"><img src="/static/images/home/client3.png" class="img-responsive" alt=""></a>
+                    </div>
+                    <div class="col-xs-3 col-sm-2">
+                        <a href="#"><img src="/static/images/home/client4.png" class="img-responsive" alt=""></a>
+                    </div>
+                    <div class="col-xs-3 col-sm-2">
+                        <a href="#"><img src="/static/images/home/client5.png" class="img-responsive" alt=""></a>
+                    </div>
+                    <div class="col-xs-3 col-sm-2">
+                        <a href="#"><img src="/static/images/home/client6.png" class="img-responsive" alt=""></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!--/#clients-->
+{% endblock %}
+
+
+{% block footer %}
+<footer id="footer">
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-12 text-center bottom-separator">
+                <img src="/static/images/home/under.png" class="img-responsive inline" alt="">
+            </div>
+            <div class="col-md-4 col-sm-6">
+                <div class="testimonial bottom">
+                    <h2>Отзывы</h2>
+                    <div class="media">
+                        <div class="pull-left">
+                            <a href="#"><img src="/static/images/home/profile1.png" alt=""></a>
+                        </div>
+                        <div class="media-body">
+                            <blockquote>Безумно красиво! Была с мужем и двумя внуками, они были в ВОСТОРГЕ!
+                            </blockquote>
+                            <h3><a href="#">- Баб Нюра</a></h3>
+                        </div>
+                    </div>
+                    <div class="media">
+                        <div class="pull-left">
+                            <a href="#"><img src="/static/images/home/profile2.png" alt=""></a>
+                        </div>
+                        <div class="media-body">
+                            <blockquote>Решила посмотреть на лабиринты и влюбилась с первого взгляда!
+                            </blockquote>
+                            <h3><a href="">- Баб Наташа</a></h3>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3 col-sm-6">
+                <div class="contact-info bottom">
+                    <h2>Контакты</h2>
+                    <address>
+                        E-mail: <a href="mailto:someone@example.com">snowderevnya@mail.ru</a> <br>
+                        Phone: +7-921-510-000-6 <br>
+                    </address>
+
+                    <h2>Адрес:</h2>
+                    <address>
+                        Мурманская область, <br>
+                        г. Кировск, <br>
+                        Район Полярно-альпийского сада-института КНЦ РАН <br>
+                    </address>
+                </div>
+            </div>
+            <div class="col-md-4 col-sm-12">
+                <div class="contact-form bottom">
+                    <h2>Отправьте нам отзыв или пожелания</h2>
+                    <form id="main-contact-form" name="contact-form" method="POST" action="/feedback/1/">
+                        <div class="form-group">
+                            <input type="text" name="field_1" class="form-control" required="required" placeholder="Контактное лицо">
+                        </div>
+                        <div class="form-group">
+                            <input type="email" name="field_2" class="form-control" required="required"
+                                   placeholder="Email">
+                        </div>
+                        <div class="form-group">
+                            <textarea name="field_3" id="message" required="required" class="form-control" rows="8"
+                                      placeholder="Комментарий к заказу"></textarea>
+                        </div>
+                        <div class="form-group">
+                            <input type="submit" name="submit" class="btn btn-submit" value="Отправить">
+                        </div>
+                        {% csrf_token %}
+                    </form>
+                </div>
+            </div>
+            <div class="col-sm-12">
+                <div class="copyright-text text-center">
+                    <p>&copy; Your Company 2017. All Rights Reserved.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+<!--/#footer-->
+{% endblock %}
+
+<script type="text/javascript" src="/static/js/jquery.js"></script>
+<script type="text/javascript" src="/static/js/bootstrap.min.js"></script>
+<script type="text/javascript" src="/static/js/lightbox.min.js"></script>
+<script type="text/javascript" src="/static/js/wow.min.js"></script>
+<script type="text/javascript" src="/static/js/main.js"></script>
+<script type="text/javascript" src="/static/js/app.js"></script>
+</body>
+</html>

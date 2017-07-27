@@ -1,0 +1,48 @@
+{% extends "base.html" %}
+
+{% block content %}
+    <a href="/">Главная</a>
+
+
+    <div class="home-content">
+        <div class="def-width">
+            <h1 class="doc-title-mobile--">Оформление заказа</h1>
+
+            <div class="header-order">
+                <div class="name">Программа/Семинар</div>
+
+                <div class="kol-vo">Кол-во обучаемых</div>
+
+                <div class="price">Цена одной программы</div>
+
+                <div class="sum-order">Итого</div>
+            </div>
+            {% for item in cart %}
+                <div class="row-order">
+                    <div class="name">{{ item.product.identifier }}</div>
+                    <div class="kol-vo">
+                        <form class="form-cart" action="{% url "cart:CartAdd" item.product.id %}" method="post"
+                              class="add">
+                            <input name="quantity" id="id_quantity">
+                            {{ item.update_quantity_form.update }}
+                            {% csrf_token %}
+                            <input type="submit" value="Обновить">
+                        </form>
+                    </div>
+                    <div class="price">{{ item.product.price }} руб.</div>
+                    <div class="sum-order">
+                        <span class="one_price_cart-{{ item.id }}">{{ item.total_price }}</span> руб.<a class="del"
+                                                                                                        href="{% url "cart:CartRemove" item.product.id %}">x</a>
+                    </div>
+                </div>
+            {% endfor %}
+            <p class="order-btn"><a class="back-order">Вернуться назад</a> <a href='{% url "orders:OrderCreateView" %}'
+                                                                              class="next-order">Продолжить</a></p>
+        </div>
+    </div>
+
+{% endblock %}
+
+
+
+

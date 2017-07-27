@@ -1,0 +1,5 @@
+<form class="order-form" action="/custom_form/{{ form_id }}/" method="post">
+    {{ custom_form.as_p }}
+    {% csrf_token %}
+    <input type="submit" value="Отправить">
+</form>

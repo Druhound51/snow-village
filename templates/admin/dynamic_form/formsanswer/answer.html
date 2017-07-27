@@ -1,0 +1,33 @@
+{% extends "admin/base_site.html" %}
+
+
+{% block extrahead %}
+    {{ block.super }}
+{% endblock %}
+
+{% block breadcrumbs %}
+<div class="breadcrumbs">
+    <a href="/admin/">Начало</a> ›
+    <a href="/admin/dynamic_form/">Dynamic_Form</a> ›
+    <a href="/admin/dynamic_form/formsanswer/">Ответы</a> ›
+    {{ title }}
+</div>
+{% endblock %}
+
+{% block content %}
+    <table width="50%">
+    <thead>
+        <th>Название формы</th>
+        <th>Значение</th>
+    </thead>
+    {% for key, value in FormsAnswer%}
+        <tr>
+            <th>{{ key }}</th>
+            <td>{{ value }}</td>
+        </tr>
+    {% endfor %}
+
+
+    </table>
+
+{% endblock %}
