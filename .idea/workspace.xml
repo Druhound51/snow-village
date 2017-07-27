@@ -1,7 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="7c6ca581-2ea0-4cb3-971c-67d36a95f6dd" name="Default" comment="" />
+    <list default="true" id="7c6ca581-2ea0-4cb3-971c-67d36a95f6dd" name="Default" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/vcs.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/files/static/css/admin_tools/custom_menu.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bp/menu.py" afterPath="$PROJECT_DIR$/bp/menu.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/files/logs/debug.log" afterPath="$PROJECT_DIR$/files/logs/debug.log" />
+    </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -96,28 +102,8 @@
       <file leaf-file-name="settings.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/bp/settings.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-1380">
-              <caret line="19" column="24" lean-forward="false" selection-start-line="19" selection-start-column="24" selection-end-line="19" selection-end-column="24" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="menu.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/bp/menu.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="15">
-              <caret line="1" column="0" lean-forward="false" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="dashboard.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/bp/dashboard.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+            <state relative-caret-position="-780">
+              <caret line="26" column="0" lean-forward="true" selection-start-line="26" selection-start-column="0" selection-end-line="26" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -154,11 +140,12 @@
       <find>admin_tools</find>
     </findStrings>
   </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/app/album/apps.py" />
-        <option value="$PROJECT_DIR$/app/album/urls.py" />
         <option value="$PROJECT_DIR$/app/pages/models.py" />
         <option value="$PROJECT_DIR$/app/album/views.py" />
         <option value="$PROJECT_DIR$/app/album/widgets.py" />
@@ -205,8 +192,10 @@
         <option value="$PROJECT_DIR$/app/store/apps.py" />
         <option value="$PROJECT_DIR$/app/pages/__init__.py" />
         <option value="$PROJECT_DIR$/app/pages/apps.py" />
-        <option value="$PROJECT_DIR$/bp/menu.py" />
         <option value="$PROJECT_DIR$/bp/urls.py" />
+        <option value="$PROJECT_DIR$/files/static/css/admin_tools/custom_menu.css" />
+        <option value="$PROJECT_DIR$/../venv-snow/lib/python3.5/site-packages/admin_tools/menu/templates/admin_tools/menu/menu.html" />
+        <option value="$PROJECT_DIR$/bp/menu.py" />
         <option value="$PROJECT_DIR$/bp/settings.py" />
       </list>
     </option>
@@ -223,6 +212,7 @@
     <option name="width" value="768" />
     <option name="height" value="876" />
   </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
     <navigator currentView="ProjectPane" proportions="" version="1">
       <flattenPackages />
@@ -247,6 +237,25 @@
               <item name="snowderevnya" type="b2602c69:ProjectViewProjectNode" />
               <item name="source" type="462c0819:PsiDirectoryNode" />
             </path>
+            <path>
+              <item name="snowderevnya" type="b2602c69:ProjectViewProjectNode" />
+              <item name="source" type="462c0819:PsiDirectoryNode" />
+              <item name="bp" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="snowderevnya" type="b2602c69:ProjectViewProjectNode" />
+              <item name="source" type="462c0819:PsiDirectoryNode" />
+              <item name="templates" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="snowderevnya" type="b2602c69:ProjectViewProjectNode" />
+              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
+            </path>
+            <path>
+              <item name="snowderevnya" type="b2602c69:ProjectViewProjectNode" />
+              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
+              <item name="&lt; Python 3.5.2 virtualenv at ~/Develop/sites/snowderevnya/venv-snow &gt;" type="70bed36:NamedLibraryElementNode" />
+            </path>
           </expand>
           <select />
         </subPane>
@@ -263,20 +272,22 @@
     <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="ToolWindowFavorites.ShowToolbar" value="false" />
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
+    <property name="ignore_missing_gitignore" value="true" />
   </component>
   <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/files/static/css" />
-      <recent name="$PROJECT_DIR$/files/static" />
-      <recent name="$PROJECT_DIR$/files/static/js" />
-      <recent name="$PROJECT_DIR$/files" />
-    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/bp" />
       <recent name="$PROJECT_DIR$/templates/admin" />
       <recent name="$PROJECT_DIR$/app/dynamic_form" />
       <recent name="$PROJECT_DIR$/app/store" />
       <recent name="$PROJECT_DIR$/files/static" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/files/static/css/admin_tools" />
+      <recent name="$PROJECT_DIR$/files/static/css" />
+      <recent name="$PROJECT_DIR$/files/static" />
+      <recent name="$PROJECT_DIR$/files/static/js" />
+      <recent name="$PROJECT_DIR$/files" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -546,15 +557,15 @@
   <component name="ToolWindowManager">
     <frame x="832" y="24" width="768" height="876" extended-state="4" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="true" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3409396" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="true" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4510067" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32978722" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="6" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="left" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" show_stripe_button="true" weight="0.5771812" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" x="1002" y="230" width="428" height="527" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.2699468" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.26907632" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32978722" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" show_stripe_button="false" weight="0.47758886" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.317757" sideWeight="0.49459043" order="10" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.31860778" sideWeight="0.49459043" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="true" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.403698" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" x="1133" y="213" width="262" height="497" />
       <window_info id="Data View" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33909574" sideWeight="0.5054096" order="11" side_tool="false" content_ui="tabs" />
@@ -603,42 +614,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/files/static/css/bootstrap/docs/assets/js/jquery.js" />
-    <entry file="file://$PROJECT_DIR$/files/static/css/main.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="165">
-          <caret line="11" column="16" lean-forward="true" selection-start-line="11" selection-start-column="16" selection-end-line="11" selection-end-column="16" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/pages/models.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="405">
-          <caret line="34" column="9" lean-forward="false" selection-start-line="34" selection-start-column="4" selection-end-line="34" selection-end-column="9" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/pages/urls.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../venv-snow/lib/python3.5/site-packages/django/contrib/admin/templates/admin/base_site.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="75">
-          <caret line="5" column="94" lean-forward="false" selection-start-line="5" selection-start-column="94" selection-end-line="5" selection-end-column="94" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../venv-snow/lib/python3.5/site-packages/django/contrib/admin/templates/admin/base.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="375">
-          <caret line="25" column="29" lean-forward="true" selection-start-line="25" selection-start-column="29" selection-end-line="25" selection-end-column="29" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/pages/views.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="60">
@@ -922,11 +897,54 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/bp/menu.py">
+    <entry file="file://$PROJECT_DIR$/../venv-snow/lib/python3.5/site-packages/admin_tools/theming/templates/admin/base.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="15">
-          <caret line="1" column="0" lean-forward="false" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/files/static/css/admin_tools/custom_menu.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="238">
+          <caret line="156" column="42" lean-forward="true" selection-start-line="156" selection-start-column="42" selection-end-line="156" selection-end-column="42" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../venv-snow/lib/python3.5/site-packages/admin_tools/menu/templates/admin/base_site.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../venv-snow/lib/python3.5/site-packages/admin_tools/menu/templates/admin_tools/menu/menu.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../venv-snow/lib/python3.5/site-packages/admin_tools/menu/templates/admin_tools/menu/item.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../venv-snow/lib/python3.5/site-packages/admin_tools/menu/templates/admin_tools/menu/menu.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="429">
+          <caret line="64" column="0" lean-forward="false" selection-start-line="64" selection-start-column="0" selection-end-line="64" selection-end-column="0" />
+          <folding>
+            <marker date="1501160360465" expanded="true" signature="1304:1526" ph="..." />
+            <marker date="1501160360465" expanded="true" signature="1340:1515" ph="{...}" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -938,10 +956,18 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/bp/menu.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="240">
+          <caret line="19" column="55" lean-forward="false" selection-start-line="19" selection-start-column="55" selection-end-line="19" selection-end-column="55" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/bp/settings.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1380">
-          <caret line="19" column="24" lean-forward="false" selection-start-line="19" selection-start-column="24" selection-end-line="19" selection-end-column="24" />
+        <state relative-caret-position="-780">
+          <caret line="26" column="0" lean-forward="true" selection-start-line="26" selection-start-column="0" selection-end-line="26" selection-end-column="0" />
           <folding />
         </state>
       </provider>

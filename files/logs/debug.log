@@ -1008,3 +1008,9 @@ Traceback (most recent call last):
   File "/home/druhound/Develop/sites/snowderevnya/venv-snow/lib/python3.5/site-packages/django/urls/resolvers.py", line 497, in _reverse_with_prefix
     raise NoReverseMatch(msg)
 django.urls.exceptions.NoReverseMatch: Reverse for 'admin-tools-dashboard-set-preferences' not found. 'admin-tools-dashboard-set-preferences' is not a valid view function or pattern name.
+[LEVEL: WARNING TIME: 2017-07-27 12:33:39,634 MODULE: base] 
+Not Found: /favicon.ico/
+[LEVEL: WARNING TIME: 2017-07-27 12:55:30,669 MODULE: base] 
+Not Found: /favicon.ico/
+[LEVEL: WARNING TIME: 2017-07-27 13:00:28,440 MODULE: base] 
+Not Found: /admin/education/education/

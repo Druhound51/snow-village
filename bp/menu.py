@@ -16,8 +16,8 @@ class CustomMenu(Menu):
             items.MenuItem(_('Dashboard'), reverse('admin:index')),
             items.Bookmarks('Закладки',
                             children=[
-                                items.MenuItem('Учебный центр', '/admin/education/education/'),
-                                items.MenuItem('Страницы', '/admin/pages/'),
+                                items.MenuItem('Пример 1', '#'),
+                                items.MenuItem('Пример 2', '#'),
                             ]
             ),
             items.AppList(
@@ -35,3 +35,6 @@ class CustomMenu(Menu):
         Use this method if you need to access the request context.
         """
         return super(CustomMenu, self).init_with_context(context)
+
+    class Media:
+        css = {'all': ('css/admin_tools/custom_menu.css',)}
