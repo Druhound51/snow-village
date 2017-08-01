@@ -6,18 +6,15 @@ from .models import Order, OrderItem
 class OrderItemInline(admin.TabularInline):
     model = OrderItem
     extra = 0
-    readonly_fields = ['product']
+    # readonly_fields = ['product']
     can_delete = False
 
     def get_readonly_fields(self, request, obj=None):
         result = list(set(
-            [field.name for field in self.opts.local_fields] +
-            [field.name for field in self.opts.local_many_to_many]
+            [field.name for field in self.opts.local_fields]
         ))
         result.remove('id')
         return result
-
-
 
 
 class OrderAdmin(admin.ModelAdmin):

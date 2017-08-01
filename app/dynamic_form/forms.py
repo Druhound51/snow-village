@@ -1,14 +1,13 @@
 # coding=utf-8
-# from __future__ import print_function
+from __future__ import print_function
 from django import forms
 
-from app.dynamic_form.models import Form, FormType
+from app.dynamic_form.models import  FormType
 
 
 class CustomForm(forms.Form):
     def __init__(self, *args, **kwargs):
-        form = kwargs.pop('extra')
-        extra = FormType.objects.filter(form=form)
+        extra = FormType.objects.filter(form=kwargs.pop('extra'))
         super(CustomForm, self).__init__(*args, **kwargs)
 
         for form in extra:

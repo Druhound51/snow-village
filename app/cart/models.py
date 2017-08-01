@@ -63,10 +63,10 @@ class Cart(object):
 
     # Цена отдельного товара
     def get_price(self):
-        prices = []
+        # prices = []
         for item in self.cart.values():
-            prices.append(int(item['price']) * item['quantity'])
-        return prices
+            item = int(item['price']) * item['quantity']
+            yield item
 
     # Очистить корзину
     def clear(self):

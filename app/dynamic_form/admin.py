@@ -1,13 +1,10 @@
 # coding=utf-8
 from __future__ import unicode_literals
 import ast
-from django.contrib import messages
-from django import forms
 from django.contrib import admin
-from django.db import models
 from django.utils.safestring import mark_safe
 
-from app.dynamic_form.models import Form, FormType, FormAnswer
+from app.dynamic_form.models import Form, FormType, FormAnswer, EmailTemplate
 
 
 class FormTypeInline(admin.TabularInline):
@@ -37,18 +34,24 @@ class FormAdmin(admin.ModelAdmin):
 #             extra_context=extra_context)
 
 class FormAnswerAdmin(admin.ModelAdmin):
+    list_display = ['id', 'name']
+    list_display_links = ['id', 'name']
     fields = [
-        'form',
+        'name',
         'text_field',
     ]
-    readonly_fields = ['text_field', 'form']
+    readonly_fields = ['text_field', 'name']
 
     def save_model(self, request, obj, form, change):
-        super(FormAnswerAdmin, self).save_model(request, obj, form, change)
-        messages.warning(request, u"ИНФО")
+        pass
 
-    @staticmethod
-    def text_field(obj):
+    def has_delete_permission(self, request, obj=None):
+        return False
+
+    def has_add_permission(self, request, obj=None):
+        return False
+
+    def text_field(self, obj):
         html = ''
         form_types_item = {}
         _dict = ast.literal_eval(obj.text)
@@ -61,7 +64,13 @@ class FormAnswerAdmin(admin.ModelAdmin):
             html += "<strong>{}</strong>: {}<br>".format(
                 form_types_item[int(form_key)], value)
         return mark_safe(html)
+    text_field.short_description = 'Текстовое поле'
+
+
+class EmailTemplateAdmin(admin.ModelAdmin):
+    list_display = ('subject',)
 
 
 admin.site.register(Form, FormAdmin)
 admin.site.register(FormAnswer, FormAnswerAdmin)
+admin.site.register(EmailTemplate, EmailTemplateAdmin)
