@@ -36,8 +36,8 @@ INSTALLED_APPS = [
     'django_mptt_admin',
     'ckeditor',
     'ckeditor_uploader',
-    'haystack',
-    'sorl.thumbnail',
+    # 'haystack',
+    # 'sorl.thumbnail',
     'meta',
 
     'app',

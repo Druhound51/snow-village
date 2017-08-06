@@ -5,7 +5,7 @@ jQuery(function ($) {
     $('.form-cart').submit(function (e) {
         e.preventDefault();
         var $form = $(this);
-        $price = 0
+        var $price = 0;
         $form.find(':button[type="submit"]').prop('disabled', true);
         $.ajax({
             type: 'POST',
@@ -23,12 +23,12 @@ jQuery(function ($) {
         })
     });
 
-    // init lazyload
-    $(function () {
-        $("img.lazy").lazyload({
-            failure_limit: 10
-        });
-    });
+    // // init lazyload
+    // $(function () {
+    //     $("img.lazy").lazyload({
+    //         failure_limit: 10
+    //     });
+    // });
 
     //Responsive Nav
     $('li.dropdown').find('.fa-angle-down').each(function () {

@@ -22,12 +22,8 @@ def cart_add(request, product_id):
             quantity=cd['quantity'],
             update_quantity=cd['update']
         )
-    # return HttpResponse(
-    #     json.dumps(list({
-    #         # 'total_price': str(Cart(request).get_total_price()),
-    #         'cart': Cart(request).cart.values()
-    #     })))
     return HttpResponse(json.dumps(list(Cart(request).cart.values())))
+
 
 # Удаление товара и корзины
 def cart_remove(request, product_id):
@@ -35,15 +31,3 @@ def cart_remove(request, product_id):
     product = Product.objects.get(id=product_id)
     cart.remove(product)
     return redirect('cart:CartDetail')
-
-
-# Просмотр корзины
-def cart_detail(request):
-    cart = Cart(request)
-    for item in cart:
-        item['update_quantity_form'] = CartAddProductForm(
-            initial={
-                'quantity': item['quantity'],
-                'update': True
-            })
-    return render(request, 'cart/detail.html', {'cart': cart})

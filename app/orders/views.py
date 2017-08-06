@@ -4,6 +4,7 @@ from django.core.mail import send_mail
 from django.shortcuts import render, redirect
 
 from app.cart.models import Cart
+from app.store.models import Product
 from app.dynamic_form.views import send_mail_content
 from .forms import OrderCreateForm
 from .models import OrderItem
@@ -21,7 +22,8 @@ def order_create(request):
     if form.is_valid():
         order = form.save()
         for item in cart:
-            OrderItem.objects.create(order=order, product=item['product'],
+            OrderItem.objects.create(order=order,
+                                     product=item['product'],
                                      price=item['price'],
                                      quantity=item['quantity'])
         context = {'obj': form.data, 'cart': cart,
