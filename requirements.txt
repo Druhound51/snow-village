@@ -21,5 +21,5 @@ requests==2.18.1
 six==1.10.0
 sorl-thumbnail==12.3
 sqlparse==0.2.3
-urllib3==1.21.1
+urllib3==1.26.5
 wget==3.2
